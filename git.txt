@@ -1,1 +1,19 @@
-git add filenamn/foldernamn/ . // git stage
+git init = initierar projektet till git, görs en gång per projekt
+
+git add filenamn/foldernamn/ . // git stage (punkt betyder allt), antingen eller. Puschar projektet till git
+
+git commit -m "en vettig kommentar för koll på vad som gjorts"
+
+Dessa gör man flera gånger
+
+git status - kolla status
+
+git checkout . = hämtar alla filer man raderat
+
+ls -a = kolla ifall git finns i ditt projekt
+ls -la = se vilka filer som ligger i projektet
+
+bokstäver
+u
+a
+m
