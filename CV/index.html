@@ -1,0 +1,146 @@
+<!-- 
+    Kriterier för hemsida
+1. Semantiska element -- CHECK
+2. All typ av positionering, grid eller flexbox !!flexboxa för mobilefirst, aside ovanpå main!! -- CHECK
+3. Rund profilbild -- CHECK
+4. Kontaktformulär
+5. Knapp för dark mode
+6. Responsiv, snygg på mobil. Mobile first, mediequerie
+7. Fetcha bakgrundsbild i body, knapp för att ändra -- CHECK
+8. Ladda upp online, github
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" async></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
+    <title>Amanda Wikström</title>
+</head>
+
+<body>
+
+    <header> 
+        <!-- <h1>Framtidens webbutvecklare!</h1> -->
+    </header>
+
+    <nav>
+        <button id="imgbutton">Byt bakgrundsbild</button>
+        <button>Kontakta mig</button> <!-- Knapp ska ta fram kontaktformulär i aside -->
+        <button>Kunskaper</button> <!-- Knapp ska ta fram logos och text för kunskaperna -->
+
+    </nav> <!--Länka till ställen på sidan, ex class-->
+
+    <div class="wrapper">
+        <aside>
+            <img class="profil" src="/CV/img/IMG_1840.jpg" alt="amanda">
+            <h2>Amanda Wikström</h2>
+            <p class="what">Studerar webbutveckling inom e-handel </p>
+            <p class="where">Medieinstitutet</p>
+            <p class="what">Technical Coordinator E-Commerce</p>
+            <p class="where">NK Retail AB</p>
+
+            <div class="contact">
+                <form>
+                <input class="text" type="text" placeholder="Skriv här">
+                <input type="email" placeholder="Din epost">
+                <button class="submit" type="submit">Skicka</button>
+                </form>
+            </div>
+        </aside>
+
+        <main>
+            <article>
+                <h3>Arbetslivserfarenhet</h3>
+
+                <h4>Technical Coordinator E-Commerce</h4>
+                <p class="company">NK Retail AB | 2021 - </p>
+                <ul>
+                    <li>Felsöker tekniska flöden kopplat till e-handel</li>
+                    <li>Acceptans- & regressionstestning av nyutveckling</li>
+                    <li>Kvalitetsäkra & förbättra processer och rutiner</li>
+                </ul>
+                
+                <h4>Replenisher</h4>
+                <p class="company">Departments & Stores | 2018 - 2021 </p>
+                <ul>
+                    <li>Kontrollera orderbekräftelse</li>
+                    <li>Artikelregistrering</li>
+                    <li>Analys och omköp av befintligt sortiment</li>
+                </ul>
+
+                <h4>Returansvarig/Supply Chain Planner</h4>
+                <p class="company">Departments & Stores | 2016 - 2018</p>
+                <ul>
+                    <li>Returhantering</li>
+                    <li>Differensutredning</li>
+                    <li>Varuflöde till avdelningar</li>
+                    <li>Kampanj- & reapåfyllning</li>
+                </ul>
+
+                <h4>Lagerarbetare</h4>
+                <p class="company">Departments & Stores | 2012 - 2016</p>  
+            </article>
+            
+            <article>
+                <h3>Utbildning</h3>
+                <h4>Webbutvecklare inom e-handel</h4>
+                <p class="company">Medieinstitutet 2021 - </p>
+                <h4>Tillämpad rättspsykologi 7,5 HP</h4>
+                <p class="company">Mälardalens Högskola 2018</p>
+                <h4>Logistik 1 7,5 HP</h4>
+                <p class="company">Högskolan Väst 2018</p>
+                <h4>Informationsdesign - webbdesign 7,5 HP</h4>
+                <p class="company">Mälardalens Högskola 2017</p>
+                <h4>Handel- & administrationsprogrammet</h4>
+                <p class="company">Lindengymnasiet, Katrineholm 2009 - 2012</p>
+            </article>
+        </main>
+
+        <div class="knowledge"> <!-- In med logos på kunskaper och att lära, transition vid hover/button js 100% -->
+            <img class="logos" src="/CV/img/150-1506020_file-html-logo-html5-css3-logo-png-transparent.png" alt="htmlcss">
+            <img class="logos" src="/CV/img/microsoft-dynamics-ax-2012.jpeg" alt="Dynamics AX">
+            <img class="logos" src="/CV/img/Riversand-logo-1.png" alt="Riversand">
+            <img class="logos" src="/CV/img/SQL-Server-Management-Studio-Logo.png" alt="Microsoft SQL Server">
+            <img class="logos" src="/CV/img/png-transparent-react-javascript-angularjs-ionic-github-text-logo-symmetry-thumbnail.png" alt="React">
+        </div>
+    </div>
+
+    <footer>
+        <p class="rubrik"> <!-- ändra till span istället-->
+            Telefonnr
+            <br>
+            <a href="tel:+4673-8182172"> 073-81 82 172</a>
+        </p>
+
+        <p class="rubrik">
+            E-mail
+            <br>
+            <a href="mailto:amanda.wikstrom@medieinsitutet.se">amanda.wikstrom@medieinsitutet.se</a> 
+        </p>
+        
+        <p class="rubrik">
+            LinkedIn
+            <br>
+            <a href="http://linkedin.com/in/amanda-wikstr%C3%B6m-903359115" target="_blank">Amanda Wikström</a>
+        </p>
+    </footer>
+
+</body>
+</html>

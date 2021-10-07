@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Styling för mobil här */
+@media screen and (max-width: 575px) {
+
+.wrapper {
+    flex-direction: column;
+    flex-wrap: wrap;
+} 
+
+aside .profil {
+    width: 90px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 60px;
+}
+
+footer {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+nav button {
+    font-size: 12px;
+}
+
+}
+
+/* Styling generellt och för större skärm här */
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1470596914251-afb0b4510279?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    max-width: 1000px;
+    min-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    display: flex;
+    flex-direction: row;
+    gap: 0 1px;
+}
+
+header {
+    /* background-color: #FEFAE0; */
+    max-width: 1000px;
+    min-height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: 'Gluten', cursive;
+    font-size: 48px;
+    bottom: 0px;
+    text-shadow: 6px -6px 6px rgb(255, 255, 255);
+    margin: 0;
+}
+
+nav {
+    background-color: #e2c5ad;
+    max-width: 1000px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    border-radius: 10px;
+    text-align: right;
+    padding-right: 6px;
+}
+
+main {
+    /* background-color: #E5D5C8; */
+    background-color: #FEFAE0;
+    /* width: 70%; */
+    min-height: 400px;
+    /* margin: 5px 5px 5px 0; */
+    flex: 75% 0;
+    border-radius: 10px;
+    padding: 5px 5px 5px 15px;
+    font-family: 'EB Garamond', serif;
+}
+
+.knowledge {
+    background-color: #FEFAE0;
+    border-radius: 10px;
+    flex: 10%;
+    text-align: center;
+    transition: flex-basis 500ms ease-in-out;
+}
+
+.knowledge:hover {
+    flex-basis: 75%;
+}
+
+aside {
+    background-color: #CCD5AE;
+    /* width: 30%; */
+    /* margin: 5px; */
+    /* flex: 1; */
+    flex: 25%;
+    text-align: center;
+    border-radius: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+footer {
+    background-color: #e2c5ad;
+    max-width: 1000px;
+    min-height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-radius: 10px;
+}
+
+.profil {
+    width: 70%;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: 1px solid #FEFAE0;
+}
+
+.rubrik {
+    flex: auto;
+    font-size: 14px;
+    margin-right: 2px;
+    margin-left: 4px;
+}
+
+aside p {
+    font-size: 14px;
+    margin: 2px 0 4px 0;
+}
+
+/* footer p {
+    border-right: 1px solid rgba(139, 139, 139, 0.432);
+} */
+
+.what {
+    font-size: 18px;
+}
+
+.where {
+    font-size: 14px;
+}
+
+h2 {
+    border-bottom: 1px solid rgba(139, 139, 139, 0.432);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+h3 {
+    border-bottom: 1px solid rgba(139, 139, 139, 0.432);
+    /* font-family: 'Lato', sans-serif; */
+}
+
+h4 {
+    margin-bottom: 2px;
+}
+
+.company {
+    font-size: 14px;
+    margin: 2px;
+}
+
+li {
+    list-style-type: circle;
+}
+
+hr {
+    width: 40%;
+    text-align: left;
+    margin-left: 4px;
+}
+
+/* .contact {
+    display: none;
+} */
+
+.logos {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #e2c5ad;
+    border: 2px solid #FEFAE0;
+    height: 60%;
+    /* color: #e2c5ad; */
+    color: #FEFAE0;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 0 10px 0 0;
+    margin: 10px 4px 10px 0;
+}
+
+button:hover {
+    background-color: #FEFAE0;
+    color: #e2c5ad;
+}
+
+.submit {
+    border-radius: 10px;
+    width: 75%;
+}
+
+input {
+    border-radius: 10px;
+    padding: 2px;
+    margin: 2px;
+}
+
+form {
+    border: 1px solid #FEFAE0;
+    padding: 4px;
+}
