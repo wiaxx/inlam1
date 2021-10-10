@@ -2,54 +2,59 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.4;
 }
 
 /* Border för att hålla koll på olika element */
-.wrapper, .content, h1, h2, h3, h4, p, image, span, .header-intro {
+
+/* .wrapper, .content, h1, h2, h3, h4, p, image, span, header, .header-intro, main, .empty, .content2, aside, footer {
     border: 1px solid salmon;
-}
+} */
 
 /* Generell styling för basic element */
 
-body {
-    /* font-family: 'Open Sans',Helvetica,Arial,sans-serif; */
-    font-family: sans-serif;
-    /* font-family: 'Open Sans', sans-serif; */
-    /* font-family: 'Roboto', sans-serif; */
-    /* font-family: 'Montserrat', sans-serif; */
-}
-
 .wrapper {
     width: 100vw;
+    display: flex;
+    flex-direction: column;
 }
 
-header, main, aside, footer {
+main {
+    color: rgb(112 113 118);
+    /* color: rgb(67 69 75); textfärg rubriker */
+    /* color: rgb(112 113 118); textfärg text */
+}
+
+header, main, aside, footer, .header-intro {
     width: 75vw;
     margin-left: auto;
     margin-right: auto;
 }
 
+strong {
+    font-weight: 530;
+}
+
 /* Styling för header-element */
+
 header {
-    border: 1px solid salmon;
-    min-height: 400px;
+    height: 730px;
     background-image: url("/responsiv1/bilder/header.png.png");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    resize: both;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    background-position: center top;
+    background-size: 120%;
+    resize: block;
 }
 
 .pagename {
     text-align: center;
     padding-top: 4%;
+    color: rgb(2 4 7);
 }
 
 .header-intro {
-    color: #333;
+    color: rgb(112 113 118);
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -57,36 +62,108 @@ header {
 }
 
 .greeting {
-    margin-left: 200px;
+    margin-left: 25%;
+    color: rgb(67 69 75);
 }
 
 .headertext {
-    /* margin-right: 2%; */
-    font-size: .8rem;
+    text-align: right;
+    align-self: flex-end;
+    margin-right: 17%;
 }
 
-/* sty */
-img {
-    width: 50%;
-    height: auto;
-}
+/* Styling för concent0 here */
 
-main {
-    border: 1px solid salmon;
-    color: #333;
-}
-
-.content, .content0 {
+.content0 {
+    background-image: url(/responsiv1/bilder/phone_no1-03.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 450px;
     display: flex;
+    min-height: 700px;
+    padding: 4px;
 }
+
+.textholder {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    justify-content: flex-end;
+}
+
+.infotext {
+    margin-top: 20px;
+    padding-right: 4px;
+}
+
+.youtuba {
+    color: rgb(67 69 75);
+}
+
+/* Styling for video here */
+
+.empty {
+    background-color: rgb(44 46 53);
+    max-height: 590px;
+}
+
+video {
+    width: 100%;
+}
+
+/* Styling for content here */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: stretch;
+    background-image: url(/responsiv1/bilder/phone_no2-03.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 380px;
+    min-height: 500px;
+}
+
+.contenttext, .contenttext2 {
+    text-align: right;
+    margin-right: 15%;
+    margin-left: 45%;
+}
+
+.contenttext {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Styling for content2 here */
+
+.content2 {
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.spancont1, .spancont2 {
+    display: inline-block;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.spancont1 {
+    margin-bottom: 20px;
+}
+
+/* Styling for aside here */
 
 aside {
-    border: 1px solid salmon;
-    height: 400px;
+    height: 330px;
     color: #333;
     background-image: url("/responsiv1/bilder/Q1_newsletter-02.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: bottom;
     padding-bottom: 0;
     display: flex;
@@ -95,20 +172,24 @@ aside {
     align-items: center;
 }
 
-.asidetext {
-    text-align: center;
+.asideh {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: rgb(67 69 75);
 }
 
-.empty, footer {
-    /* background-color: rgb(66, 66, 66); */
-    background-color: #333;
-    height: 200px;
-    border: 1px solid salmon;
+.asidetext {
+    color: rgb(112 113 118);
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 /* Styling for footer here */
 
 footer {
+    background-color: rgb(44 46 53);
+    height: 300px;
     color: white;
     display: flex;
     justify-content: space-evenly;
@@ -120,28 +201,38 @@ footer {
     text-align: right;
 }
 
+/* Styling för big devices */
+
+@media (max-width: 1200px) {
+
+    header {
+        max-height: 570px;
+    }
+}
 
 /* styling for medium devices */
 
 @media (max-width: 800px) {
 
     header {
-        background-size: 750px;
-        border: 4px solid red;
-        min-height: 400px;
+        background-size: 850px;
+        /* border: 4px solid red; */
+        max-height: 480px;
     }
         
-    header, main, aside, footer {
+    header, main, aside, footer, .header-intro {
         width: 100vw;
     }
 
     aside {
-        background-image: url("/responsiv1/bilder/Q1_newsletter-02.png");
-        background-size: 100%;
+        background-size: 100% 100%;
         height: 300px;
-        border: 4px solid red;
+        /* border: 4px solid red; */
     }
     
+    .contenttext, .contenttext2 {
+        margin-left: 48%;
+    }
 }
 
 /* Styling for small devices */
@@ -149,28 +240,44 @@ footer {
 @media (max-width: 570px) {
 
 header {
-    background-size: 600px;
-    background-position: cover;
-    border: 4px solid green;
-    min-height: 340px;
+    background-size: 675px;
+    background-position: center top;
+    /* border: 4px solid green; */
+    max-height: 385px;
 }
 
-header, main, aside, footer {
+header, main, aside, footer, .header-intro {
     width: 100vw;
+    font-size: .7rem;
+}
+
+.content0 {
+    background-size: 350px;
+    min-height: 530px;
+}
+
+.content {
+    background-size: 300px;
+    min-height: 400px;
+}
+
+.contenttext, .contenttext2 {
+    margin-left: 45%;
 }
 
 aside {
-    background-size: 100%;
-    height: 250px;
-    border: 4px solid green;
+    background-size: 100% 100%;
+    max-height: 230px;
+    /* border: 4px solid green; */
+    font-size: 0.7rem;
 }
 
-.header-intro {
-    font-size: 1rem;
+.headertext {
+    font-size: .8rem;
 }
 
 footer {
-    font-size: 12px;
+    height: 200px;
 }
 
 }
